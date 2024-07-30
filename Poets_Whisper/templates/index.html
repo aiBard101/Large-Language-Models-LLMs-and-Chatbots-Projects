@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poet's Whisper</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <h1>Poet's Whisper</h1>
+        <p id="word">Enter a word or two to inspire a poem:</p>
+        <img src="https://cdn.i-scmp.com/sites/default/files/styles/landscape/public/d8/yp/images/shutterstock_339411857.jpg?itok=Tyv0nTbM"
+            alt="Poetry Image" class="poetry-image">
+        <div class="input-container">
+            <input type="text" id="userInput" placeholder="Enter a word or phrase...">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724927.png" alt="Send" id="sendButton"
+                onclick="generatePoem()">
+        </div>
+        <div id="loadingAnimation" class="loader" style="display: none;"></div>
+        <div id="loadingMessage" style="display: none;"></div>
+        <div id="poemOutput" style="display: none;">
+            <h2 id="poemOutputH">Poet</h2>
+            <p id="poemOutputP"></p>
+        </div>
+        <button id="tryAgainButton" style="display: none;" onclick="reloadPage()">Try Again</button>
+        <footer>
+            &copy; aiBard.annonymousAsquare 2024
+        </footer>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>
